@@ -1,0 +1,1 @@
+# altv-weapons-data
