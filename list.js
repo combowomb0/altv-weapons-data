@@ -30,7 +30,10 @@ const weapons = {
   "hatchet": {
     hash: -102973651
   },
-  "knuckleduster": {
+  "stone_hatchet": {
+    hash: 940833800
+  },
+  "knuckle": {
     hash: -656458692
   },
   "machete": {
@@ -60,7 +63,7 @@ const weapons = {
       1709866683 //Suppressor
     ]
   },
-  "pistolmk2": {
+  "pistol_mk2": {
     hash: 3219281620,
     components: [
       1591132456, //Extended Clip
@@ -96,6 +99,20 @@ const weapons = {
       2063610803 //Extended Clip
     ]
   },
+  "snspistol_mk2": {
+    hash: 2285322324,
+    components: [
+      3465283442, //Extended Clip
+      2418909806, //Tracer Rounds
+      3870121849, //Incendiary Rounds
+      2366665730, //Hollow Point Rounds
+      3239176998, //Full Metal Jacket Rounds
+      1246324211, //Flashlight
+      1205768792, //Mounted Scope
+      1709866683, //Suppressor
+      2860680127 //Compensator
+    ]
+  },
   "heavypistol": {
     hash: -771403250,
     components: [
@@ -117,6 +134,19 @@ const weapons = {
   "heavyrevolver": {
     hash: -1045183535
   },
+  "heavyrevolver_mk2": {
+    hash: 3415619887,
+    components: [
+      3336103030, //Tracer Rounds
+      15712037, //Incendiary Rounds
+      284438159, //Hollow Point Rounds
+      231258687, //Full Metal Jacket Rounds
+      1108334355, //Holographic Sight
+      77277509, //Small Scope
+      899381934, //Flashlight
+      654802123 //Compensator
+    ]
+  },
   "appistol": {
     hash: 584646201,
     components: [
@@ -130,6 +160,12 @@ const weapons = {
   },
   "flaregun": {
     hash: 1198879012
+  },
+  "doubleaction": {
+    hash: 2548703416
+  },
+  "raypistol": {
+    hash: 0xAF3696A1
   },
   // submachine guns
   "microsmg": {
@@ -159,7 +195,7 @@ const weapons = {
       3271853210 //Suppressor
     ]
   },
-  "smgmk2": {
+  "smg_mk2": {
     hash: 2024373456,
     components: [
       3112393518, //Extended Clip
@@ -207,6 +243,9 @@ const weapons = {
       2474561719 //Extended Clip
     ]
   },
+  "raycarbine": {
+    hash: 1198256469
+  },
   // machine guns
   "mg": {
     hash: -1660422300,
@@ -223,7 +262,7 @@ const weapons = {
       202788691 //Grip
     ]
   },
-  "combatmgmk2": {
+  "combatmg_mk2": {
     hash: 3686625920,
     components: [
       400507625, //Extended Clip
@@ -263,7 +302,7 @@ const weapons = {
       202788691 //Grip
     ]
   },
-  "assaultriflemk2": {
+  "assaultrifle_mk2": {
     hash: 961495388,
     components: [
       3509242479, //Extended Clip
@@ -298,7 +337,7 @@ const weapons = {
       202788691 //Grip
     ]
   },
-  "carbineriflemk2": {
+  "carbinerifle_mk2": {
     hash: 4208062921,
     components: [
       1574296533, //Extended Clip
@@ -342,6 +381,29 @@ const weapons = {
       202788691 //Grip
     ]
   },
+  "specialcarbine_mk2": {
+    hash: 2526821735,
+    components: [
+      3726614828, //Extended Clip
+      2271594122, //Tracer Rounds
+      3724612230, //Incendiary Rounds
+      1362433589, //Armor Piercing Rounds
+      1346235024, //Full Metal Jacket Rounds
+      2076495324, //Flashlight
+      1108334355, //Holographic Sight
+      77277509, //Small Scope
+      3328927042, //Large Scope
+      2805810788, //Suppressor
+      3113485012, //Flat Muzzle Brake
+      3362234491, //Tactical Muzzle Brake
+      3725708239, //Fat-End Muzzle Brake
+      3968886988, //Precision Muzzle Brake
+      48731514, //Heavy Duty Muzzle Brake
+      880736428, //Slanted Muzzle Brake
+      1303784126, //Split-End Muzzle Brake
+      2640679034 //Grip
+    ]
+  },
   "bullpuprifle": {
     hash: 2132975508,
     components: [
@@ -350,6 +412,30 @@ const weapons = {
       2855028148, //Scope
       2205435306, //Suppressor
       202788691 //Grip
+    ]
+  },
+  "bullpuprifle_mk2": {
+    hash: 2228681469,
+    components: [
+      4021290536, //Extended Clip
+      2183159977, //Tracer Rounds
+      2845636954, //Incendiary Rounds
+      4205311469, //Armor Piercing Rounds
+      1130501904, //Full Metal Jacket Rounds
+      2076495324, //Flashlight
+      1108334355, //Holographic Sight
+      3350057221, //Small Scope
+      1060929921, //Medium Scope
+      1005743559, //Heavy Barrel
+      2205435306, //Suppressor
+      3113485012, //Flat Muzzle Brake
+      3362234491, //Tactical Muzzle Brake
+      3725708239, //Fat-End Muzzle Brake
+      3968886988, //Precision Muzzle Brake
+      48731514, //Heavy Duty Muzzle Brake
+      880736428, //Slanted Muzzle Brake
+      1303784126, //Split-End Muzzle Brake
+      2640679034 //Grip
     ]
   },
   "compactrifle": {
@@ -375,7 +461,7 @@ const weapons = {
       3159677559 //Advanced Scope
     ]
   },
-  "heavysnipermk2": {
+  "heavysniper_mk2": {
     hash: 177293209,
     components: [
       752418717, //Extended Clip
@@ -403,12 +489,51 @@ const weapons = {
       202788691 //Grip
     ]
   },
+  "marksmanrifle_mk2": {
+    hash: 1785463520,
+    components: [
+      3872379306, //Extended Clip
+      3615105746, //Tracer Rounds
+      1842849902, //Incendiary Rounds
+      4100968569, //Armor Piercing Rounds
+      3779763923, //Full Metal Jacket Rounds
+      1108334355, //Holographic Sight
+      3328927042, //Large Scope
+      1528590652, //Zoom Scope
+      2076495324, //Flashlight
+      2205435306, //Suppressor
+      3113485012, //Flat Muzzle Brake
+      3362234491, //Tactical Muzzle Brake
+      3725708239, //Fat-End Muzzle Brake
+      3968886988, //Precision Muzzle Brake
+      48731514, //Heavy Duty Muzzle Brake
+      880736428, //Slanted Muzzle Brake
+      1303784126, //Split-End Muzzle Brake
+      1748450780, //Heavy Barrel
+      2640679034 //Grip
+    ]
+  },
   // shotguns
   "pumpshotgun": {
     hash: 487013001,
     components: [
       2076495324, //Flashlight
       3859329886 //Suppressor
+    ]
+  },
+  "pumpshotgun_mk2": {
+    hash: 1432025498,
+    components: [
+      2676628469, //Dragon's Breath Shells
+      1315288101, //Steel Buckshot Shells
+      3914869031, //Flechette Shells
+      1004815965, //Explosive Slugs
+      1108334355, //Holographic Sight
+      77277509, //Small Scope
+      1060929921, //Medium Scope
+      2076495324, //Flashlight
+      2890063729, //Suppressor
+      1602080333, //Squared Muzzle Brake
     ]
   },
   "sawnoffshotgun": {
@@ -444,7 +569,7 @@ const weapons = {
       202788691 //Grip
     ]
   },
-  "doublebarrelshotgun": {
+  "dbshotgun": {
     hash: -275439685
   },
   "autoshotgun": {
@@ -474,11 +599,14 @@ const weapons = {
   "hominglauncher": {
     hash: 1672152130
   },
-  "grenadelaunchersmoke": {
+  "grenadelauncher_smoke": {
     hash: 1305664598
   },
   "compactlauncher": {
     hash: 125959754
+  },
+  "rayminigun": {
+    hash: 3056410471
   },
   // thrown
   "grenade": {
@@ -487,7 +615,7 @@ const weapons = {
   "stickybomb": {
     hash: 741814745
   },
-  "proximitymine": {
+  "proxmine": {
     hash: -1420407917
   },
   "bzgas": {
@@ -495,12 +623,6 @@ const weapons = {
   },
   "molotov": {
     hash: 615608432
-  },
-  "fireextinguisher": {
-    hash: 101631238
-  },
-  "petrolcan": {
-    hash: 883325847
   },
   "flare": {
     hash: 1233104067
@@ -518,7 +640,13 @@ const weapons = {
     hash: -1169823560
   },
   // utility
+  "petrolcan": {
+    hash: 883325847
+  },
   "parachute": {
     hash: -72657034
+  },
+  "fireextinguisher": {
+    hash: 101631238
   }
 };
