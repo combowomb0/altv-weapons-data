@@ -1,6 +1,6 @@
-# altv-weapons-data
-## weapons data with components (varmod components not included)
-### simple usage:
+# altv-weapons-data  
+weapons data with components (varmod components not included)  
+simple usage:  
 ```ts
 interface WeaponData {
   hash: number;
